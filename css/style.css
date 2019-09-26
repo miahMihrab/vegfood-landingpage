@@ -624,6 +624,10 @@ input[type="submit"] {
   #nav_ul {
     width: 60%;
   }
+
+  #header h6 {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 540px) {
   #services {
@@ -728,5 +732,19 @@ input[type="submit"] {
     padding-right: 0;
     border-right: 0;
     width: 100%;
+  }
+  #nav {
+    flex-direction: column !important;
+    justify-content: space-between;
+  }
+  #nav ul {
+    margin-top: 10px;
+    width: 80%;
+  }
+  #header {
+    /* flex-direction: column; */
+  }
+  #header h6 {
+    font-size: 0.6rem;
   }
 }
