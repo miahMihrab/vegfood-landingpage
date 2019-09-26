@@ -32,6 +32,7 @@ function scroll() {
   } else if (window.pageYOffset < 500) {
     document.querySelector("#nav").style.padding = "25px";
   }
+  console.log(document.querySelector("#fruits"));
   const serviceContent = document.querySelector(".serviceContent");
   const fruits = document.querySelector("#fruits");
   const juice = document.querySelector("#juice");
@@ -114,7 +115,6 @@ const timer = setInterval(() => {
   } else {
     sec++;
     document.querySelector('#sec').innerHTML = sec + " secs";
-    console.log(sec);
   }
 
 }, 1000)

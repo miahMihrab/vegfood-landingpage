@@ -588,3 +588,145 @@ input[type="submit"] {
     height: 100vh;
   }
 }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  #img1 h1 {
+    font-size: 3rem !important;
+  }
+  #img1 button {
+    font-size: 1.7rem;
+    padding: 10px;
+  }
+  .serviceContent span {
+    padding: 3px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .outer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .inner {
+    width: 40px;
+    height: 40px;
+  }
+
+  .inner i {
+    font-size: 1.6rem;
+  }
+  #our_products {
+    grid-template-columns: 50% 50%;
+  }
+
+  #nav_ul {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #services {
+    flex-direction: column;
+  }
+  .outer {
+    width: 85px;
+    height: 85px;
+  }
+
+  .inner {
+    width: 55px;
+    height: 55px;
+  }
+
+  .inner i {
+    font-size: 1.8rem;
+  }
+  #our_products {
+    grid-template-columns: 90%;
+    justify-content: center;
+  }
+  #deals {
+    margin-top: 30vh !important;
+  }
+  #categories {
+    grid-template-columns: 90%;
+    justify-content: center;
+    margin-bottom: 30vh;
+  }
+  #veg_text {
+    display: none;
+  }
+  #veg::after {
+    content: "Vegetables";
+    background: #82ae46;
+    padding: 8px 18px 8px 18px;
+    position: relative;
+    top: 218px;
+    color: #fff;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  #img1 h1 {
+    margin-top: 50% !important;
+    font-size: 2rem !important;
+  }
+  #img1 button {
+    font-size: 1.4rem;
+    padding: 8px;
+  }
+  #deals {
+    height: 75vh;
+  }
+
+  #offer > p {
+    color: #82ae46;
+    font-size: 2.7rem;
+    padding-top: 12vh;
+    padding-bottom: 5vh;
+  }
+
+  #offer > h1 {
+    color: #fff;
+    font-size: 2.2rem;
+  }
+  #offer > h3 {
+    padding-top: 7vh;
+    color: #82ae58;
+    font-size: 1.8rem;
+  }
+  #timer div {
+    font-size: 1.5rem;
+  }
+  #newsletter {
+    border: 1px solid;
+  }
+  #newsletter form {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  #newsletter form > input {
+    width: 100% !important;
+    margin-top: 3vh;
+  }
+  #contact {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  #contact address {
+    padding-left: 10%;
+    color: white;
+    font-size: 1.5rem;
+  }
+  #contact address > p {
+    padding: 0;
+  }
+
+  #contact form,
+  #contact address {
+    padding-right: 0;
+    border-right: 0;
+    width: 100%;
+  }
+}
